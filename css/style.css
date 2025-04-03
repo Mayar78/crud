@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    background-color: rgb(244, 162, 38);
+    font-family: "Monoton", sans-serif;
+    font-size:4rem;
+}
+
+@media screen and (max-width : 600px) {
+    h1{
+        font-size: 2rem;
+    }
+    
+}
+.input_Form{
+    background-color:rgb(229, 119, 31) ;
+}
+
+.btn_add{
+    background-color: #76c7ad;
+}
+
+
+.lists{
+    background-color: #5a3e2b;
+}
+.modal{
+    background-color:rgba(3, 3, 3, 0.2);
+}

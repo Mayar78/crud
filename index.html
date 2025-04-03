@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monoton&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Trip</title>
+  </head>
+  <body>
+    <h1 class="text-center py-4 mb-0">🌴 Far away 💼</h1>
+
+    <div class="input_Form">
+      <div class="container d-flex py-4 flex-column flex-md-row">
+        <label for="item_value text-center" class="h3"
+          >What do your do need for your 😍 trip ?
+        </label>
+        <input
+          id="item_value"
+          class="form-control w-100 w-md-25 w-lg-50 ms-lg-4 me-1"
+          type="text"
+          placeholder="Item..."
+        />
+        <button id="btn_add" class="btn btn_add d-block">Add</button>
+        <button id="btn_update" class="btn bg-warning d-none">Update</button>
+      </div>
+    </div>
+
+    <div class="lists py-4">
+      <input
+        type="search"
+        class="form-control w-50 mx-auto mb-4"
+        placeholder="search item "
+        id="searchInput"
+      />
+      <div class="container">
+        <table class="table text-white">
+          <thead>
+            <th>Index</th>
+            <th>Item</th>
+            <th>Delete</th>
+            <th>Update</th>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+      <p
+        class="h5 py-4 text-white w-100 w-md-25 text-center"
+        id="arrLength"
+      ></p>
+    </div>
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body" id="innerMsg"></div>
+        </div>
+      </div>
+    </div>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
